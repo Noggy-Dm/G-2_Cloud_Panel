@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    flex: 1;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #38bdf8;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9)), 
+                url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&auto=format&fit=crop') center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #f8fafc;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+}
+
+/* --- Buttons & Typography --- */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0284c7;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: #f8fafc;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    font-size: 1.125rem;
+    color: #94a3b8;
+    margin-bottom: 2rem;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* --- Section Headings --- */
+.section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #38bdf8;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Summary / Plot Box --- */
+.plot-box {
+    background-color: #1e293b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #38bdf8;
+}
+
+.plot-box p {
+    margin-bottom: 1rem;
+}
+
+.plot-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Main Characters Grid --- */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-body h3 {
+    font-size: 1.2rem;
+    color: #f8fafc;
+}
+
+.card-body .role {
+    font-size: 0.875rem;
+    color: #38bdf8;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* --- Media Grid --- */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.media-item {
+    background-color: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.media-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #cbd5e1;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #020617;
+    text-align: center;
+    padding: 1.5rem;
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-top: auto;
+}
