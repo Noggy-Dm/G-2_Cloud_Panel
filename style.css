@@ -231,7 +231,7 @@ body {
 /* --- Home Page Banner --- */
 .home-banner {
     background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.8)), 
-                url('https://cdn.mos.cms.futurecdn.net/GyxJbjFLszS5Hnss6cWyzF.jpg') center/cover no-repeat;
+                url('https://cdn.mos.cms.futurecdn.net/GyxJbjFLszS5Hnss6cWyzF.jpg') top/cover no-repeat;
     height: 50vh;
     display: flex;
     justify-content: center;
