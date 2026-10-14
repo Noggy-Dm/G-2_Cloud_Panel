@@ -227,3 +227,30 @@ body {
     font-size: 0.875rem;
     margin-top: auto;
 }
+
+/* --- Home Page Banner --- */
+.home-banner {
+    background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.8)), 
+                url('https://cdn.mos.cms.futurecdn.net/GyxJbjFLszS5Hnss6cWyzF.jpg') center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    color: #f8fafc;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.banner-content p {
+    font-size: 1.25rem;
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
